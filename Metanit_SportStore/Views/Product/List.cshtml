@@ -1,0 +1,19 @@
+﻿@model IEnumerable<Metanit_SportStore.Models.Product>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    @foreach(var r in Model)
+    {
+        <div>
+            <h3>@r.Name</h3>
+            @r.Description
+            <h4>@r.Price.ToString("c")</h4>
+        </div>
+    }
+</body>
+</html>
